@@ -204,13 +204,13 @@ function HeroGeometric({
               href="https://api.whatsapp.com/send?phone=5562986012147" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="px-8 py-4 bg-green-500 hover:bg-green-600 text-white font-bold rounded-full transition-all flex items-center gap-2 shadow-[0_0_20px_rgba(34,197,94,0.3)] hover:shadow-[0_0_30px_rgba(34,197,94,0.5)] hover:-translate-y-1"
+              className="w-full sm:w-auto px-8 py-4 bg-green-500 hover:bg-green-600 text-white font-bold rounded-full transition-all flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(34,197,94,0.3)] hover:shadow-[0_0_30px_rgba(34,197,94,0.5)] hover:-translate-y-1"
             >
               Fazer Orçamento no WhatsApp
             </a>
             <a 
               href="#catalogo" 
-              className="px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-bold rounded-full backdrop-blur-md border border-white/20 transition-all hover:-translate-y-1"
+              className="w-full sm:w-auto px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-bold rounded-full backdrop-blur-md border border-white/20 transition-all hover:-translate-y-1 text-center"
             >
               Ver Eletrodomésticos
             </a>

@@ -38,24 +38,24 @@ export default function Home() {
       <HeroGeometric />
 
       {/* CATALOG SECTION */}
-      <section id="catalogo" className="py-24 px-6 max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+      <section id="catalogo" className="py-16 md:py-24 px-4 md:px-6 max-w-7xl mx-auto">
+        <div className="text-center mb-12 md:mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white">Catálogo de Eletrodomésticos</h2>
-          <p className="text-blue-200 text-lg">Aparelhos seminovos revisados com rigorosa garantia de qualidade Eficaz Manutenção.</p>
+          <p className="text-blue-200 text-base md:text-lg">Aparelhos seminovos revisados com rigorosa garantia de qualidade Eficaz Manutenção.</p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {catalog.map((product) => (
-            <div key={product.id} className="bg-[#112240] rounded-2xl overflow-hidden border border-blue-900/50 hover:border-blue-500/50 transition-all group">
-              <div className="h-60 overflow-hidden relative">
+            <div key={product.id} className="bg-[#112240] rounded-2xl overflow-hidden border border-blue-900/50 hover:border-blue-500/50 transition-all group flex flex-col">
+              <div className="h-52 md:h-60 overflow-hidden relative shrink-0">
                 <img src={product.image} alt={product.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 <div className="absolute inset-0 bg-blue-900/20 group-hover:bg-transparent transition-all" />
               </div>
-              <div className="p-6 flex flex-col h-[220px]">
-                <h3 className="text-xl font-bold mb-2 text-white">{product.name}</h3>
+              <div className="p-5 md:p-6 flex flex-col flex-grow">
+                <h3 className="text-lg md:text-xl font-bold mb-2 text-white">{product.name}</h3>
                 <p className="text-blue-200/80 text-sm mb-4 line-clamp-2">{product.description}</p>
                 <div className="flex items-center justify-between mt-auto">
-                  <span className="text-xl lg:text-2xl font-bold text-cyan-400">{product.price}</span>
+                  <span className="text-xl font-bold text-cyan-400">{product.price}</span>
                   <a 
                     href={`https://api.whatsapp.com/send?phone=5562986012147&text=Ol%C3%A1!%20Tenho%20interesse%20no%20produto:%20${encodeURIComponent(product.name)}`}
                     target="_blank"
@@ -71,8 +71,8 @@ export default function Home() {
       </section>
 
       {/* LOCATION & INFO SECTION */}
-      <section className="bg-[#020c1b] py-24 px-6 border-t border-blue-900/30">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <section className="bg-[#020c1b] py-16 md:py-24 px-4 md:px-6 border-t border-blue-900/30">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-white">Onde nos encontrar</h2>
             <div className="space-y-6">
@@ -82,7 +82,7 @@ export default function Home() {
                 </div>
                 <div>
                   <h4 className="text-lg font-bold text-white mb-1">Endereço</h4>
-                  <p className="text-blue-200">Av. Laudelino Gomes, 152 - St. Bela Vista<br/>Goiânia - GO, 74823-395</p>
+                  <p className="text-blue-200 text-sm md:text-base">Av. Laudelino Gomes, 152 - St. Bela Vista<br/>Goiânia - GO, 74823-395</p>
                 </div>
               </div>
               
@@ -92,7 +92,7 @@ export default function Home() {
                 </div>
                 <div>
                   <h4 className="text-lg font-bold text-white mb-1">Telefone / WhatsApp</h4>
-                  <p className="text-blue-200">(62) 98601-2147</p>
+                  <p className="text-blue-200 text-sm md:text-base">(62) 98601-2147</p>
                 </div>
               </div>
 
@@ -102,13 +102,13 @@ export default function Home() {
                 </div>
                 <div>
                   <h4 className="text-lg font-bold text-white mb-1">Horário de Funcionamento</h4>
-                  <p className="text-blue-200">Aberto de Segunda a Sábado<br/>A partir das 08:00</p>
+                  <p className="text-blue-200 text-sm md:text-base">Aberto de Segunda a Sábado<br/>A partir das 08:00</p>
                 </div>
               </div>
             </div>
           </div>
           
-          <div className="h-[400px] w-full rounded-2xl overflow-hidden border border-blue-900/50 shadow-2xl relative">
+          <div className="h-[300px] md:h-[400px] w-full rounded-2xl overflow-hidden border border-blue-900/50 shadow-2xl relative">
             <iframe 
               src="https://maps.google.com/maps?q=Av.+Laudelino+Gomes,+152+-+St.+Bela+Vista,+Goiânia+-+GO,+74823-395&t=&z=15&ie=UTF8&iwloc=&output=embed" 
               width="100%" 
