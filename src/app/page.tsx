@@ -110,7 +110,7 @@ export default function Home() {
           
           <div className="h-[400px] w-full rounded-2xl overflow-hidden border border-blue-900/50 shadow-2xl relative">
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m3!1d3821.579124483856!2d-49.263774523992224!3d-16.721136584055273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef0e7ac3e39b5%3A0x451b7f4287586195!2sEficaz%20Manuten%C3%A7%C3%A3o%20-%20Conserto%20de%20Geladeira%20e%20Lava%20e%20Seca!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
+              src="https://maps.google.com/maps?q=Av.+Laudelino+Gomes,+152+-+St.+Bela+Vista,+Goiânia+-+GO,+74823-395&t=&z=15&ie=UTF8&iwloc=&output=embed" 
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 
