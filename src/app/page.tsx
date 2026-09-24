@@ -1,35 +1,31 @@
-import { HeroGeometric } from "@/components/ui/shape-landing-hero";
+﻿import { HeroGeometric } from "@/components/ui/shape-landing-hero";
 import { MapPin, Phone, Clock, MessageCircle } from "lucide-react";
 
 export default function Home() {
-  const catalog = [
+  const services = [
     {
       id: 1,
-      name: "Geladeira Brastemp Frost Free Duplex",
-      description: "Revisada e com garantia de 90 dias. Excelente estado.",
-      price: "R$ 1.850",
-      image: "https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?auto=format&fit=crop&q=80&w=800",
+      name: "ManutenÃ§Ã£o de Geladeiras",
+      description: "Reparo em geladeiras comuns, duplex e comerciais. DiagnÃ³stico preciso para resolver defeitos de refrigeraÃ§Ã£o.",
+      image: "/images/geladeira_manutencao.jpg",
     },
     {
       id: 2,
-      name: "Lava e Seca Samsung EcoBubble",
-      description: "11kg, Motor Digital Inverter, higienizada e testada.",
-      price: "R$ 2.400",
-      image: "https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&q=80&w=800",
+      name: "Conserto de Lavadoras",
+      description: "Especialistas em lavadoras tradicionais (abertura superior). Consertamos vazamentos, motor, placa e centrifugaÃ§Ã£o.",
+      image: "/images/lavadora_manutencao.jpg",
     },
     {
       id: 3,
-      name: "Máquina de Lavar Electrolux 12kg",
-      description: "Painel digital, cesto inox. Perfeita para o dia a dia.",
-      price: "R$ 1.100",
-      image: "https://images.unsplash.com/photo-1626806819282-2c1dc01a5e0c?auto=format&fit=crop&q=80&w=800",
+      name: "Reparo em Lava e Seca",
+      description: "AssistÃªncia tÃ©cnica avanÃ§ada para mÃ¡quinas Lava e Seca. ManutenÃ§Ã£o preventiva e corretiva.",
+      image: "/images/lava_e_seca_manutencao.jpg",
     },
     {
       id: 4,
-      name: "Freezer Vertical Consul",
-      description: "Ideal para comércios e grandes famílias. Gela super rápido.",
-      price: "R$ 1.500",
-      image: "https://images.unsplash.com/photo-1605615714041-3d7bebd33e4b?auto=format&fit=crop&q=80&w=800",
+      name: "Micro-ondas, Fornos e Freezers",
+      description: "Conserto de micro-ondas, fornos elÃ©tricos (com grill) e manutenÃ§Ã£o em freezers horizontais e verticais.",
+      image: "/images/microondas_forno_manutencao.jpg",
     },
   ];
 
@@ -37,31 +33,30 @@ export default function Home() {
     <main className="min-h-screen bg-[#0a192f] text-slate-100 font-sans">
       <HeroGeometric />
 
-      {/* CATALOG SECTION */}
-      <section id="catalogo" className="py-16 md:py-24 px-4 md:px-6 max-w-7xl mx-auto">
+      {/* SERVICES SECTION */}
+      <section id="servicos" className="py-16 md:py-24 px-4 md:px-6 max-w-7xl mx-auto">
         <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white">Catálogo de Eletrodomésticos</h2>
-          <p className="text-blue-200 text-base md:text-lg">Aparelhos seminovos revisados com rigorosa garantia de qualidade Eficaz Manutenção.</p>
+          <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white">Nossos ServiÃ§os Especializados</h2>
+          <p className="text-blue-200 text-base md:text-lg">TÃ©cnicos experientes para resolver o problema do seu eletrodomÃ©stico de forma rÃ¡pida e orgÃ¢nica.</p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-          {catalog.map((product) => (
-            <div key={product.id} className="bg-[#112240] rounded-2xl overflow-hidden border border-blue-900/50 hover:border-blue-500/50 transition-all group flex flex-col">
+          {services.map((service) => (
+            <div key={service.id} className="bg-[#112240] rounded-2xl overflow-hidden border border-blue-900/50 hover:border-blue-500/50 transition-all group flex flex-col">
               <div className="h-52 md:h-60 overflow-hidden relative shrink-0">
-                <img src={product.image} alt={product.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <img src={service.image} alt={service.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 <div className="absolute inset-0 bg-blue-900/20 group-hover:bg-transparent transition-all" />
               </div>
               <div className="p-5 md:p-6 flex flex-col flex-grow">
-                <h3 className="text-lg md:text-xl font-bold mb-2 text-white">{product.name}</h3>
-                <p className="text-blue-200/80 text-sm mb-4 line-clamp-2">{product.description}</p>
+                <h3 className="text-lg md:text-xl font-bold mb-2 text-white">{service.name}</h3>
+                <p className="text-blue-200/80 text-sm mb-6 flex-grow">{service.description}</p>
                 <div className="flex items-center justify-between mt-auto">
-                  <span className="text-xl font-bold text-cyan-400">{product.price}</span>
                   <a 
-                    href={`https://api.whatsapp.com/send?phone=5562986012147&text=Ol%C3%A1!%20Tenho%20interesse%20no%20produto:%20${encodeURIComponent(product.name)}`}
+                    href={`https://api.whatsapp.com/send?phone=5562986012147&text=Ol%C3%A1!%20Preciso%20de%20assist%C3%AAncia%20t%C3%A9cnica%20para:%20${encodeURIComponent(service.name)}`}
                     target="_blank"
-                    className="bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-lg text-sm font-bold transition-colors"
+                    className="w-full text-center bg-blue-600 hover:bg-blue-500 text-white px-4 py-3 rounded-lg text-sm font-bold transition-colors"
                   >
-                    Comprar
+                    Agendar Visita
                   </a>
                 </div>
               </div>
@@ -81,8 +76,8 @@ export default function Home() {
                   <MapPin className="w-6 h-6 text-cyan-400" />
                 </div>
                 <div>
-                  <h4 className="text-lg font-bold text-white mb-1">Endereço</h4>
-                  <p className="text-blue-200 text-sm md:text-base">Av. Laudelino Gomes, 152 - St. Bela Vista<br/>Goiânia - GO, 74823-395</p>
+                  <h4 className="text-lg font-bold text-white mb-1">EndereÃ§o</h4>
+                  <p className="text-blue-200 text-sm md:text-base">Av. Laudelino Gomes, 152 - St. Bela Vista<br/>GoiÃ¢nia - GO, 74823-395</p>
                 </div>
               </div>
               
@@ -101,8 +96,8 @@ export default function Home() {
                   <Clock className="w-6 h-6 text-cyan-400" />
                 </div>
                 <div>
-                  <h4 className="text-lg font-bold text-white mb-1">Horário de Funcionamento</h4>
-                  <p className="text-blue-200 text-sm md:text-base">Aberto de Segunda a Sábado<br/>A partir das 08:00</p>
+                  <h4 className="text-lg font-bold text-white mb-1">HorÃ¡rio de Funcionamento</h4>
+                  <p className="text-blue-200 text-sm md:text-base">Aberto de Segunda a SÃ¡bado<br/>A partir das 08:00</p>
                 </div>
               </div>
             </div>
@@ -110,7 +105,7 @@ export default function Home() {
           
           <div className="h-[300px] md:h-[400px] w-full rounded-2xl overflow-hidden border border-blue-900/50 shadow-2xl relative">
             <iframe 
-              src="https://maps.google.com/maps?q=Av.+Laudelino+Gomes,+152+-+St.+Bela+Vista,+Goiânia+-+GO,+74823-395&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+              src="https://maps.google.com/maps?q=Av.+Laudelino+Gomes,+152+-+St.+Bela+Vista,+GoiÃ¢nia+-+GO,+74823-395&t=&z=15&ie=UTF8&iwloc=&output=embed" 
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 
@@ -125,7 +120,7 @@ export default function Home() {
 
       {/* FOOTER */}
       <footer className="bg-[#020c1b] py-8 text-center text-blue-200/50 text-sm border-t border-blue-900/20">
-        <p>&copy; {new Date().getFullYear()} Eficaz Manutenção. Todos os direitos reservados.</p>
+        <p>&copy; {new Date().getFullYear()} Eficaz ManutenÃ§Ã£o. Todos os direitos reservados.</p>
       </footer>
 
       {/* FLOATING WHATSAPP BUTTON */}
