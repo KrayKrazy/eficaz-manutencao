@@ -1,30 +1,30 @@
-﻿import { HeroGeometric } from "@/components/ui/shape-landing-hero";
+import { HeroGeometric } from "@/components/ui/shape-landing-hero";
 import { MapPin, Phone, Clock, MessageCircle } from "lucide-react";
 
 export default function Home() {
   const services = [
     {
       id: 1,
-      name: "ManutenÃ§Ã£o de Geladeiras",
-      description: "Reparo em geladeiras comuns, duplex e comerciais. DiagnÃ³stico preciso para resolver defeitos de refrigeraÃ§Ã£o.",
+      name: "Manutenção de Geladeiras",
+      description: "Reparo em geladeiras comuns, duplex e comerciais. Diagnóstico preciso para resolver defeitos de refrigeração.",
       image: "/images/geladeira_manutencao.jpg",
     },
     {
       id: 2,
       name: "Conserto de Lavadoras",
-      description: "Especialistas em lavadoras tradicionais (abertura superior). Consertamos vazamentos, motor, placa e centrifugaÃ§Ã£o.",
+      description: "Especialistas em lavadoras tradicionais (abertura superior). Consertamos vazamentos, motor, placa e centrifugação.",
       image: "/images/lavadora_manutencao.jpg",
     },
     {
       id: 3,
       name: "Reparo em Lava e Seca",
-      description: "AssistÃªncia tÃ©cnica avanÃ§ada para mÃ¡quinas Lava e Seca. ManutenÃ§Ã£o preventiva e corretiva.",
+      description: "Assistência técnica avançada para máquinas Lava e Seca. Manutenção preventiva e corretiva.",
       image: "/images/lava_e_seca_manutencao.jpg",
     },
     {
       id: 4,
       name: "Micro-ondas, Fornos e Freezers",
-      description: "Conserto de micro-ondas, fornos elÃ©tricos (com grill) e manutenÃ§Ã£o em freezers horizontais e verticais.",
+      description: "Conserto de micro-ondas, fornos elétricos (com grill) e manutenção em freezers horizontais e verticais.",
       image: "/images/microondas_forno_manutencao.jpg",
     },
   ];
@@ -36,8 +36,8 @@ export default function Home() {
       {/* SERVICES SECTION */}
       <section id="servicos" className="py-16 md:py-24 px-4 md:px-6 max-w-7xl mx-auto">
         <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white">Nossos ServiÃ§os Especializados</h2>
-          <p className="text-blue-200 text-base md:text-lg">TÃ©cnicos experientes para resolver o problema do seu eletrodomÃ©stico de forma rÃ¡pida e orgÃ¢nica.</p>
+          <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white">Nossos Serviços Especializados</h2>
+          <p className="text-blue-200 text-base md:text-lg">Técnicos experientes para resolver o problema do seu eletrodoméstico de forma rápida e eficiente.</p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
@@ -76,8 +76,8 @@ export default function Home() {
                   <MapPin className="w-6 h-6 text-cyan-400" />
                 </div>
                 <div>
-                  <h4 className="text-lg font-bold text-white mb-1">EndereÃ§o</h4>
-                  <p className="text-blue-200 text-sm md:text-base">Av. Laudelino Gomes, 152 - St. Bela Vista<br/>GoiÃ¢nia - GO, 74823-395</p>
+                  <h4 className="text-lg font-bold text-white mb-1">Endereço</h4>
+                  <p className="text-blue-200 text-sm md:text-base">Av. Laudelino Gomes, 152 - St. Bela Vista<br/>Goiânia - GO, 74823-395</p>
                 </div>
               </div>
               
@@ -96,8 +96,8 @@ export default function Home() {
                   <Clock className="w-6 h-6 text-cyan-400" />
                 </div>
                 <div>
-                  <h4 className="text-lg font-bold text-white mb-1">HorÃ¡rio de Funcionamento</h4>
-                  <p className="text-blue-200 text-sm md:text-base">Aberto de Segunda a SÃ¡bado<br/>A partir das 08:00</p>
+                  <h4 className="text-lg font-bold text-white mb-1">Horário de Funcionamento</h4>
+                  <p className="text-blue-200 text-sm md:text-base">Aberto de Segunda a Sábado<br/>A partir das 08:00</p>
                 </div>
               </div>
             </div>
@@ -105,7 +105,7 @@ export default function Home() {
           
           <div className="h-[300px] md:h-[400px] w-full rounded-2xl overflow-hidden border border-blue-900/50 shadow-2xl relative">
             <iframe 
-              src="https://maps.google.com/maps?q=Av.+Laudelino+Gomes,+152+-+St.+Bela+Vista,+GoiÃ¢nia+-+GO,+74823-395&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+              src="https://maps.google.com/maps?q=Av.+Laudelino+Gomes,+152+-+St.+Bela+Vista,+Goiânia+-+GO,+74823-395&t=&z=15&ie=UTF8&iwloc=&output=embed" 
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 
@@ -120,7 +120,7 @@ export default function Home() {
 
       {/* FOOTER */}
       <footer className="bg-[#020c1b] py-8 text-center text-blue-200/50 text-sm border-t border-blue-900/20">
-        <p>&copy; {new Date().getFullYear()} Eficaz ManutenÃ§Ã£o. Todos os direitos reservados.</p>
+        <p>&copy; {new Date().getFullYear()} Eficaz Manutenção. Todos os direitos reservados.</p>
       </footer>
 
       {/* FLOATING WHATSAPP BUTTON */}

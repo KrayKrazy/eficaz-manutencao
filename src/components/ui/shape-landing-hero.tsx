@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { motion } from "framer-motion";
 import { Wrench } from "lucide-react";
@@ -189,7 +189,7 @@ function HeroGeometric({
             animate="visible"
           >
             <p className="text-base sm:text-lg md:text-xl text-blue-100/80 mb-8 leading-relaxed font-light tracking-wide max-w-2xl mx-auto px-4">
-              Assistência técnica especializada em GoiÃ¢nia e regiÃ£o. Agilidade, garantia no serviÃ§o e peÃ§as originais para o seu eletrodomÃ©stico voltar a funcionar perfeitamente.
+              Assistência técnica especializada em Goiânia e região. Agilidade, garantia no serviço e peças originais para o seu eletrodoméstico voltar a funcionar perfeitamente.
             </p>
           </motion.div>
           
@@ -206,7 +206,7 @@ function HeroGeometric({
               rel="noopener noreferrer"
               className="w-full sm:w-auto px-8 py-4 bg-green-500 hover:bg-green-600 text-white font-bold rounded-full transition-all flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(34,197,94,0.3)] hover:shadow-[0_0_30px_rgba(34,197,94,0.5)] hover:-translate-y-1"
             >
-              Fazer OrÃ§amento no WhatsApp
+              Fazer Orçamento no WhatsApp
             </a>
             <a 
               href="#servicos" 
@@ -224,4 +224,3 @@ function HeroGeometric({
 }
 
 export { HeroGeometric };
-

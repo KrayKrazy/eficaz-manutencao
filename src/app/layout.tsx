@@ -17,10 +17,14 @@ export const metadata: Metadata = {
   description: "Manutenção e conserto de geladeiras, lava e seca, máquinas de lavar, micro-ondas e fornos. Atendimento especializado em Goiânia.",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html
-      lang="en"
+      lang="pt-BR"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
